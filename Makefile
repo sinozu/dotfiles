@@ -1,2 +1,2 @@
 install-brew:
-	bin brew/install.sh
+	/bin/bash brew/install.sh
