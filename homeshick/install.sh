@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd {$HOME}
+
+# homeshick
+if not type homeshick > /dev/null 2>&1
+    git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
+    printf '\nsource "$HOME/.homesick/repos/homeshick/homeshick.sh"' >> $HOME/.bashrc
+    source $HOME/.bashrc
+end
+
+homeshick clone sinozu/fish_castle
+homeshick clone sinozu/git_castle
+homeshick clone sinozu/ec2ssh_castle
