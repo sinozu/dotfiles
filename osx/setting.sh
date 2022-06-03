@@ -69,12 +69,9 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad SecondClickThr
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -int 1
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -int 1
 
+# 軌跡の速さ
+defaults write -g com.apple.trackpad.scaling -int 3
+
 # Dockを自動的に表示/非表示
 defaults write com.apple.Dock autohide -bool true
 
-# メニューバーにBluetoothを表示
-defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
-
-defaults write com.apple.controlcenter "NSStatusItem Visible Battery" -bool true
-defaults write com.apple.controlcenter "NSStatusItem Visible Clock" -bool true
-defaults write com.apple.Siri StatusMenuVisible -bool false
