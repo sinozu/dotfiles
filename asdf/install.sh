@@ -11,5 +11,9 @@ if ! (asdf which python > /dev/null 2>&1); then
 	asdf plugin-add python
 fi
 
+if ! (asdf which java > /dev/null 2>&1); then
+	asdf plugin-add java
+fi
+
 asdf install
 
